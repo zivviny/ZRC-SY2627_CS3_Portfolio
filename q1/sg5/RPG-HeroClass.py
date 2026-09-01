@@ -20,7 +20,7 @@ elif arthur.hp <= 0:
 elif arthur.hp == 100: # Assuming that original hp is 100, and current hp is also 100.
     print(f"{arthur.name} has {arthur.hp} HP remaining!")
 
-if morgana.hp < 100: # assuming that original hp is 100.
+if morgana.hp < 100 and morgana.hp > 0: # assuming that original hp is 100.
     print(f"{morgana.name} has reduced HP to {morgana.hp}!")
 elif morgana.hp <= 0:
     print(f"{morgana.name} has been defeated!")
