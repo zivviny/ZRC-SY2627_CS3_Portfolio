@@ -13,7 +13,7 @@ morgana = Hero("Morgana", 100)
 
 arthur.take_damage(10)
 
-if arthur.hp < 100: # assuming that original hp is 100.
+if arthur.hp < 100 and arthur.hp > 0: # assuming that original hp is 100.
     print(f"{arthur.name} has reduced HP to {arthur.hp}!")
 elif arthur.hp <= 0:
     print(f"{arthur.name} has been defeated!")
