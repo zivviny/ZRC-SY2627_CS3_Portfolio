@@ -23,3 +23,23 @@ This activity guides you through modeling relationships between objects visually
 2. Implement the `Course` and `Student` classes.
 3. Write a method inside `Course` that appends a `Student` object to a list.
 4. Commit and push your code to your GitHub repository.
+
+class Student:
+    def __init__(self, student_id : str, name : str):
+        self.student_id = student_id
+        self.name = name
+    
+    def enrollInCourse(self, course):
+        course.add_student(self)
+
+class Course:
+    def __init__(self, course_id : str, title : str):
+        self.course_id = course_id
+        self.title = title
+        self.students = []
+    
+    def add_student(self, student):
+        self.students.append(student)
+    
+    def get_students(self):
+        return self.students
