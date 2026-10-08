@@ -1,0 +1,1 @@
+# @property is python's way of keeping things simple. It lets you write code like user.name instead of making it as get_name() functions. You still have control to validate the data or run logic behind the scenes, but without breaking how other people use the code.
