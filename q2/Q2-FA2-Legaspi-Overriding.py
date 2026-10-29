@@ -3,21 +3,25 @@ class Patient:
         self.__name = name
         self.__bill_amount = bill_amount
 
-    def get_name(self):
+    @property
+    def name(self):
         return self.__name
 
-    def set_name(self, name):
+    @name.setter
+    def name(self, name):
         self.__name = name
 
-    def get_bill_amount(self):
+    @property
+    def bill_amount(self):
         return self.__bill_amount
 
-    def set_bill_amount(self, bill_amount):
+    @bill_amount.setter
+    def bill_amount(self, bill_amount):
         self.__bill_amount = bill_amount
 
     def calculate_bill(self):
         return self.__bill_amount
-    
+
 class SeniorPatient(Patient):
     discount_rate = 0.20
 
@@ -41,6 +45,6 @@ print("\nHospital Billing System\n")
 print("--------------------------\n")
 
 for people in patients:
-    print(f"Patient Name: {people.get_name()}")
-    print(f"Original Bill: {people.get_bill_amount():,.2f}")
+    print(f"Patient Name: {people.name}")
+    print(f"Original Bill: {people.bill_amount:,.2f}")
     print(f"Final Bill: {people.calculate_bill():,.2f}\n")
