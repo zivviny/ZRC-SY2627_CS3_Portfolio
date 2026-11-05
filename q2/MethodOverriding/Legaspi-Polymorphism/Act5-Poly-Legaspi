@@ -1,0 +1,14 @@
+# 1. What do all the methods (move(), special_move(), use()) in the previous activities have in
+# common?
+
+# The methods perform actions or behaviours. Representing an action that an object can perform.
+
+# 2. How does this activity show polymorphism in a gaming context?
+
+# The activity shows us that, polymorphism lets the game treat different object while allowing them to behave differently.
+
+# 3. Can you think of other examples where the same action behaves differently depending on
+the character or item?
+
+# I love interactive games—Stardew Valley and Fields of Mistria—they both have interactive features, so sometthing like
+# interact(), can allow players to open chests, pick clovers, or float in the wind depending on the game.
